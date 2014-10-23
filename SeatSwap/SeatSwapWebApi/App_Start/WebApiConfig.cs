@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Formatting;
 using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
@@ -17,6 +18,11 @@ namespace SeatSwapWebApi
             config.SuppressDefaultHostAuthentication();
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
 
+            config.Formatters.Clear();
+            config.Formatters.Add(new JsonMediaTypeFormatter());
+            //config.Formatters.Add(new XmlMediaTypeFormatter());
+            //config.Formatters.Add(new FormUrlEncodedMediaTypeFormatter());
+
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -25,6 +31,13 @@ namespace SeatSwapWebApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            /*
+
+            config.Routes.MapHttpRoute(
+                name: "SeatsOfferApi",
+                routeTemplate: "api/{controller}/{id}/offer");
+             */
         }
     }
 }
