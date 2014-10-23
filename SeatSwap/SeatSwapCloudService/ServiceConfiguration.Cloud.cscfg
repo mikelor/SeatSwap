@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="SeatSwapCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="SeatSwapWebApi">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=portalvhds3w1n12fjs8xhd;AccountKey=1sghv4GZ13RqetnoHQphSdcMBU/vV/JdvlDGw+EpuZGYemcg4jqreNhYFvbdVgo9+UJEMApVYw9pplGIm9j8Mw==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31010.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "SeatSwapCloudService", "SeatSwapCloudService\SeatSwapCloudService.ccproj", "{6AF5A2D9-DDD5-47BC-86D4-AD60117B7404}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeatSwapWebApi", "SeatSwapWebApi\SeatSwapWebApi.csproj", "{4326E08F-8CD9-43A2-8A6F-6A515A2F62B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AF5A2D9-DDD5-47BC-86D4-AD60117B7404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AF5A2D9-DDD5-47BC-86D4-AD60117B7404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AF5A2D9-DDD5-47BC-86D4-AD60117B7404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AF5A2D9-DDD5-47BC-86D4-AD60117B7404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4326E08F-8CD9-43A2-8A6F-6A515A2F62B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4326E08F-8CD9-43A2-8A6F-6A515A2F62B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4326E08F-8CD9-43A2-8A6F-6A515A2F62B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4326E08F-8CD9-43A2-8A6F-6A515A2F62B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
