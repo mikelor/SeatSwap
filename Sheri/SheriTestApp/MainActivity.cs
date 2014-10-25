@@ -5,27 +5,50 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Java.Lang;
 
 namespace SheriTestApp
 {
-    [Activity(Label = "SheriTestApp", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "", MainLauncher = true, Icon = "@drawable/seatswap_logo")]
     public class MainActivity : Activity
     {
         int count = 1;
+
+        string[] web = {"", "", "", ""};
+
+        //// references to our images
+        int[] thumbIds = {
+            
+            Resource.Drawable.blue_seat, Resource.Drawable.green_seat,
+            Resource.Drawable.orange_seat, Resource.Drawable.red_seat
+        };
+        
+        GridView grid;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
+            
+            CustomGrid adapter = new CustomGrid(this, web, thumbIds);
+            grid = FindViewById<GridView>(Resource.Id.grid);
+            grid.SetAdapter(adapter);
+            grid.ItemClick += (sender, args) => Toast.MakeText(this, args.Position.ToString(), ToastLength.Short).Show();
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
-
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            // Set our view from the "main" layout resource
+            //SetContentView(Resource.Layout.Main);
+            
+            //Button button = FindViewById<Button>(Resource.Id.MyButton);
+            
+            //button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            //CustomGrid adapter = new CustomGrid(MainActivity.this, web, imageId);
+            //GridView gridview = FindViewById <GridView>(Resource.Id.gridview);
+            //gridview.SetAdapter(IListAdapter(this);
+           // gridview.SetAdapter(new ImageAdapter (this));
+            
         }
     }
 }
+
 
