@@ -25,7 +25,7 @@ namespace SheriTestApp
         };
         
         GridView grid;
-
+        
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -43,6 +43,19 @@ namespace SheriTestApp
                 var intent = new Intent(this, typeof(SwapableSeat));
                 StartActivity(intent);
             };
+
+
+            // Set our view from the "main" layout resource
+            //SetContentView(Resource.Layout.Main);
+            
+            //Button button = FindViewById<Button>(Resource.Id.MyButton);
+            
+            //button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            //CustomGrid adapter = new CustomGrid(MainActivity.this, web, imageId);
+            //GridView gridview = FindViewById <GridView>(Resource.Id.gridview);
+            //gridview.SetAdapter(IListAdapter(this);
+           // gridview.SetAdapter(new ImageAdapter (this));
+            
 
         }
     }

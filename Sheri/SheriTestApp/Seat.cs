@@ -12,7 +12,10 @@ using Android.Widget;
 
 namespace SheriTestApp
 {
+
+
     class Seat2
+
     {
       
     }

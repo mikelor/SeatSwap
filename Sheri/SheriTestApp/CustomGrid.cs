@@ -2,31 +2,39 @@ using Android.Content;
 using Android.Views;
 using Android.Widget;
 using Java.Lang;
+
 using System.Collections.Generic;
+
 
 namespace SheriTestApp
 {
     public class CustomGrid : BaseAdapter
     {
         private int[] imageID;
+
         private int[] seatID;
         private string[] web;
         private Context context;
         private SeatPage seatsPage = new SeatPage();
         private List<Seat> seats;
         private int x = 0;
+
         
         public CustomGrid(Context c, string [] web, int[] imageID)
         {
             context = c;
             this.imageID = imageID;
             this.web = web;
+
             seats = seatsPage.getAllSeats();
+
         }
 
         public override int Count
-        {
+	{
+
             get { return seats.Count; }
+           
         }
 
         public override Object GetItem(int position)
@@ -42,6 +50,7 @@ namespace SheriTestApp
         // create a new ImageView for each item referenced by the Adapter
         public override View GetView(int position, View convertView, ViewGroup parent)
         {                           
+
             View grid;
             LayoutInflater inflater = (LayoutInflater)context.GetSystemService(Context.LayoutInflaterService);
 
@@ -52,9 +61,15 @@ namespace SheriTestApp
                 TextView textView = (TextView)grid.FindViewById(Resource.Id.grid_text);
                 ImageView imageView = (ImageView)grid.FindViewById(Resource.Id.grid_image);
 
+
                 //textView.SetText("", TextView.BufferType.Normal);
-                textView.SetText(GetSeatID(position), TextView.BufferType.Normal);
-                imageView.SetImageResource(imageID[GetSeatImage(position)]);
+               // textView.SetText(GetSeatID(position), TextView.BufferType.Normal);
+                //imageView.SetImageResource(imageID[GetSeatImage(position)]);
+
+		
+                textView.SetText(web[position].ToString(), TextView.BufferType.Normal);
+                imageView.SetImageResource(imageID[position]); 
+
             }
             else
             {
@@ -85,8 +100,13 @@ namespace SheriTestApp
 
             return imageID;
         }
-       
-    }
 
+        private int GetSeatCount()
+        {
+            int count = 4;
+            return count;
+        }
+  
+    }
    
 }

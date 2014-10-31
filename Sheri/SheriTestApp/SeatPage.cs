@@ -9,6 +9,7 @@ namespace SheriTestApp
 {
     class SeatPage //: ContentView
     {
+
         public List<Seat> getAllSeats()
         {
             List<Seat> allseats = new List<Seat>();
@@ -28,7 +29,7 @@ namespace SheriTestApp
                     }
                 }
             }
-            foreach(Seat seat in allseats)
+            foreach (Seat seat in allseats)
             {
                 switch (seat.SeatId)
                 {
@@ -58,7 +59,7 @@ namespace SheriTestApp
                         break;
                 }
             }
-            
+
             return allseats;
 
         }
@@ -106,6 +107,18 @@ namespace SheriTestApp
                 return sb.ToString();
             }
 
+            static readonly int seatCount = 14;
+
+            public void SeatMapPage()
+            {
+                // var button = new Button { Text = "seat" };
+
+                for (int i = 0; i < seatCount; i++)
+                {
+                    //Seat seat = new Seat();
+                }
+
+            }
         }
     }
 }

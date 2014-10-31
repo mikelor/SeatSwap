@@ -60,6 +60,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SwapableSeat.cs" />
+    <Compile Include="Seat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -86,6 +87,7 @@
     <Content Include="Properties\AndroidManifest.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Properties\AndroidManifest.xml" />
     <AndroidResource Include="Resources\drawable\sample_0.jpg" />
     <AndroidResource Include="Resources\drawable\sample_1.jpg" />
     <AndroidResource Include="Resources\drawable\sample_2.jpg" />
