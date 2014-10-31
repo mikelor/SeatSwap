@@ -37,13 +37,6 @@ namespace SheriTestApp
             grid.SetAdapter(adapter);
             grid.ItemClick += (sender, args) => Toast.MakeText(this, args.Position.ToString(), ToastLength.Short).Show();
 
-            Button bt_send = this.FindViewById<Button>(Resource.Id.btnSelect);
-            bt_send.Click += (object sender, EventArgs e) =>
-            {
-                var intent = new Intent(this, typeof(SwapableSeat));
-                StartActivity(intent);
-            };
-
         }
     }
 }

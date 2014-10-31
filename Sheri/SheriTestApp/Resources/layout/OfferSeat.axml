@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+    <TextView
+        android:text="Offer My Seat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0.0dp"
+        android:textColor="#004f51"
+        android:layout_weight="0"
+        android:layout_marginBottom="26.6dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="35dp" />
+    <TextView
+        android:text="I'm willing to swap my seat for"
+        android:id="@+id/tvPostText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0.0dp"
+        android:textColor="#004f51"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:textSize="25dp"
+        android:background="#f8f7f5" />
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/checkbox"
+            android:layout_width="293.1dp"
+            android:layout_height="match_parent"
+            android:textColor="#004f51"
+            android:text="Free"
+            android:layout_marginLeft="50dp"
+            android:textSize="30dp"
+            android:textStyle="normal" />
+        <RadioButton
+            android:id="@+id/checkbox1"
+            android:textColor="#004f51"
+            android:layout_width="220.8dp"
+            android:layout_height="wrap_content"
+            android:text="Drink"
+            android:layout_marginLeft="50dp"
+            android:textSize="30dp"
+            android:textStyle="normal" />
+        <RadioButton
+            android:id="@+id/checkbox2"
+            android:textColor="#004f51"
+            android:layout_width="203.9dp"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:layout_marginLeft="50dp"
+            android:textSize="30dp" />
+    </RadioGroup>
+    <TextView
+        android:text="I'm willing to sit"
+        android:layout_width="match_parent"
+        android:layout_height="35.8dp"
+        android:layout_marginRight="0.0dp"
+        android:textColor="#004f51"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:textSize="25dp"
+        android:background="#f8f7f5" />
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/checkboxA"
+            android:layout_width="209.5dp"
+            android:layout_height="wrap_content"
+            android:textColor="#004f51"
+            android:text="Anywhere"
+            android:layout_marginLeft="50dp"
+            android:textSize="30dp" />
+        <RadioButton
+            android:id="@+id/checkboxB"
+            android:layout_width="251.6dp"
+            android:layout_height="wrap_content"
+            android:textColor="#004f51"
+            android:text="Window Seat"
+            android:layout_marginLeft="50dp"
+            android:textSize="30dp"
+            android:layout_marginRight="89.4dp" />
+        <RadioButton
+            android:id="@+id/checkbox"
+            android:layout_width="195.1dp"
+            android:layout_height="wrap_content"
+            android:textColor="#004f51"
+            android:text="Aisle Seat"
+            android:layout_marginLeft="50dp"
+            android:textSize="30dp" />
+    </RadioGroup>
+    <Button
+        android:text="Post"
+        android:id="@+id/btnPost"
+        android:layout_width="match_parent"
+        android:layout_height="82.6dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:background="#004f51"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="40dp" />
+</LinearLayout>

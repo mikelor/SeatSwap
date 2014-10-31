@@ -5,25 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <Button
-        android:text="Swap My Seat"
-        android:id="@+id/btnSelect"
-        android:layout_width="match_parent"
-        android:layout_height="82.6dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="10dp"
-        android:textColor="#ffffff"
-        android:background="#004f51"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:textSize="40dp" />
     <GridView
         android:id="@+id/grid"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:columnWidth="50dp"
         android:numColumns="auto_fit"
-        android:verticalSpacing="10dp"
+        android:verticalSpacing="5dp"
         android:horizontalSpacing="10dp"
         android:stretchMode="columnWidth"
         android:gravity="center" />
