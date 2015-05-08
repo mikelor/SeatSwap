@@ -46,9 +46,9 @@ namespace SeatSwapWebApi.Controllers
         [Route("api/seats/{id}/bid")]
         public void GetBid(string id)
         {
-            string AccountSid = "AC4570e6b0b210cf295101b6fb82ae623d";
-            string AuthToken = "315d68d84e41a1c2e35c510cd32a557c";
-            string AcctFromPhone = "+19073122887";
+            string AccountSid = "Oops";
+            string AuthToken = "IDidItAgain";
+            string AcctFromPhone = "+18005551212";
             var twilio = new TwilioRestClient(AccountSid, AuthToken);
 
 
